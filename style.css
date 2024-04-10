@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@font-face {
+    font-family: kaka;
+    src: url(./GeneralSans-Medium.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: kaka;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.minicircle {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    z-index: 99;
+    transform: scale(0);
+    mix-blend-mode: difference;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+
+}
+
+.main {
+    background: #000;
+}
+
+.landing-page {
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    position: relative;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3vw 3vw;
+}
+
+.nav h5 {
+    font-size: 1.3vw;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 100;
+}
+
+.bec {
+    text-transform: uppercase;
+    position: relative;
+    /* background: #fff; */
+    cursor: pointer;
+}
+
+.bec::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    transition: all ease-in .17s;
+}
+
+.bec:hover::after {
+    width: 100%;
+    right: 0px;
+}
+
+.heading {
+    margin-top: 60px;
+    padding: 0 3vw;
+}
+
+.bounding {
+    width: fit-content;
+    overflow: hidden;
+}
+
+
+.bounding .bounding-elem {
+    transform: translateY(100%);
+}
+
+.bounding .bounding-elem2 {
+    transform: translateY(-200%);
+}
+
+.heading h1 {
+    text-transform: uppercase;
+    font-size: 10.4vw;
+    line-height: .9;
+    opacity: .6;
+}
+
+.heading2-text {
+    width: fit-content;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+
+.heading2-text h1 {
+    margin-left: 150px;
+}
+
+.heading2-text h5 {
+    text-align: right;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-weight: 200;
+    font-size: 1.1vw;
+}
+
+.landing-page-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+
+.landing-page-footer a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+}
+
+.circle-con {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.circle {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background: #ffffffcd;
+    border-radius: 50%;
+}
+
+.second {
+    padding: 120px 30px 0;
+    background: #000;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.second .elem {
+    border-top: 1px solid #ffffff93;
+    padding: 2vw 2vw;
+    font-size: 4vw;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 0;
+    position: relative;
+}
+
+.second .elem h6 {
+    font-size: 1.5vw;
+    font-family: Roboto;
+    font-weight: 100;
+}
+
+.second .elemlast {
+    border-bottom: 1px solid #ffffff93;
+}
+
+.second .elem h1 {
+    opacity: .6;
+}
+
+.elem img {
+    opacity: 0;
+    pointer-events: none;
+    height: 140%;
+    z-index: 999;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.about-page {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+    gap: 80px;
+    background: #000;
+    color: #fff;
+    padding: 0px 8vw 0 3.5vw;
+}
+
+.about-page img {
+    height: 20vw;
+    width: 20vw;
+    border-radius: 50%;
+}
+
+.about-page .about-para {
+    width: 40%;
+    font-size: 1.2vw;
+}
+
+.about-page .about-para p {
+    line-height: 2vw;
+}
+
+.about-para h6 {
+    color: white;
+    opacity: .7;
+}
+
+.about-page button {
+    text-transform: capitalize;
+    background: #000;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 8px 25px;
+    transition: all ease-in-out .4s;
+}
+
+.about-page button:hover {
+    background: rgb(255, 255, 255);
+    color: #000;
+}
+
+.channel-footer {
+    background: #000;
+    color: rgb(255, 255, 255);
+    padding: 0vw 3vw;
+}
+
+.channel-footer h5 {
+    color: rgb(255, 255, 255);
+    opacity: .7;
+    margin-bottom: 5px;
+}
+
+.footer {
+    padding: 100px 3vw 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000;
+}
+
+.footer .section1 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer .section2 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.section2 p {
+    text-transform: uppercase;
+}
